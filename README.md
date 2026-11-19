@@ -10,6 +10,11 @@ Sistema híbrido que combina **Machine Learning (scikit-learn)** para calcular l
 riesgo académico de un estudiante y la **API de Groq** para redactar un plan de tutoría
 personalizado a partir de ese diagnóstico.
 
+> 🔗 **Repositorio:** <https://github.com/AlanGandD/evaluador-riesgo-academico>
+>
+> 🚀 **Desplegar en Streamlit Cloud:**
+> <https://share.streamlit.io/deploy?repository=AlanGandD/evaluador-riesgo-academico&branch=main&mainModule=app.py>
+
 ---
 
 ## 📁 Estructura del proyecto
@@ -105,10 +110,14 @@ Se abre en `http://localhost:8501`. En la barra lateral ajusta **asistencia**, *
 
 ## ☁️ Despliegue en Streamlit Community Cloud (Paso 6)
 
-1. Subir al repositorio de GitHub: `app.py`, `entrenar.py`, `alumnos.csv`,
-   `modelo_riesgo.pkl`, `requirements.txt` y `.gitignore`. **Nunca** subir `.streamlit/secrets.toml`.
-2. Entrar a <https://share.streamlit.io>, autorizar GitHub y elegir *New app* → repositorio,
-   rama `main` y *Main file path*: `app.py`.
+1. El repositorio ya está publicado en
+   <https://github.com/AlanGandD/evaluador-riesgo-academico> (rama `main`). `secrets.toml` y `.venv/`
+   **no** se subieron gracias al `.gitignore`.
+2. Entrar al enlace directo de despliegue
+   <https://share.streamlit.io/deploy?repository=AlanGandD/evaluador-riesgo-academico&branch=main&mainModule=app.py>,
+   autorizar la app de Streamlit en GitHub (solo la primera vez) y confirmar repositorio, rama `main`
+   y *Main file path*: `app.py`. Si se prefiere a mano: <https://share.streamlit.io> → *Create app* →
+   *Deploy a public app from GitHub*.
 3. En **Advanced settings → Secrets** pegar:
 
    ```toml
